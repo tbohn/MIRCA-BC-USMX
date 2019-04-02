@@ -1,7 +1,7 @@
-# MIRCA_USMX_BC
+# MIRCA-BC-USMX
 Tools for generating planted and irrigated area fractions by bias-correcting MIRCA2000 data to match government records in the US and Mexico
 
-This project contains the scripts used to create irrigation parameters by bias-correcting the MIRCA2000 dataset to match state (county?) government records in the US and Mexico [(MIRCA_USMX_BC)](https://zenodo.org/record/xxxxxxx) (ref). These parameters are included along with other land surface parameters in input files formatted for use in the VIC model (Liang et al., 1994) release 5.1 (Hamman et al., 2018) extended to handle irrigation (ref). These parameters are intended for use in VIC's "image" driver.
+This project contains the scripts used to create irrigation parameters by bias-correcting the MIRCA2000 dataset to match state (county?) government records in the US and Mexico [(MIRCA-BC-USMX)](https://zenodo.org/record/xxxxxxx) (ref). These parameters are included along with other land surface parameters in input files formatted for use in the VIC model (Liang et al., 1994) release 5.1 (Hamman et al., 2018) extended to handle irrigation (ref). These parameters are intended for use in VIC's "image" driver.
 
 ## This project had several goals:
 1. xxx
@@ -40,7 +40,7 @@ The processing stages covered by the scripts in this dataset are:
  - For each year (xxx, xxx, xxx), 24 ascii-format ESRI grid files at 1/16 degree resolution covering the USMX domain, consisting of 12 monthly maps of (a) planted area fractions and (b) irrigated fractions.
  - For each year (xxx, xxx, xxx), input parameter files for the VIC land surface model, available for download from [Zenodo](https://zenodo.org/record/xxxxxxx) (ref). Each parameter file contains typical input parameters for VIC plus 12 monthly maps of (a) planted fractions and (b) irrigation fractions.
 
-These parameter files were designed for use with VIC 5 (image driver). VIC 5 image driver requires a "domain" file to accompany the parameter file. This domain file is also necessary for disaggregating the daily gridded meteorological forcings to hourly for input to VIC via the disaggregating tool [MetSim](https://github.com/UW-Hydro/MetSim) (Bennett et al., 2018).  We have provided a domain file compatible with the meteorological forcings of Livneh et al (2015) ("L2015" hereafter) and the MIRCA_USMX_BC parameters, on [Zenodo](https://zenodo.org/record/2564019).
+These parameter files were designed for use with VIC 5 (image driver). VIC 5 image driver requires a "domain" file to accompany the parameter file. This domain file is also necessary for disaggregating the daily gridded meteorological forcings to hourly for input to VIC via the disaggregating tool [MetSim](https://github.com/UW-Hydro/MetSim) (Bennett et al., 2018).  We have provided a domain file compatible with the meteorological forcings of Livneh et al (2015) ("L2015" hereafter) and the MIRCA-BC-USMX parameters, on [Zenodo](https://zenodo.org/record/2564019).
 
 
 ## Directory Structure:
